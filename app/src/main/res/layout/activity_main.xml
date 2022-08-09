@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/uzay" />
+
+    <EditText
+        android:id="@+id/kiloInput"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Kilonuzu giriniz"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#4CA1AF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/rgPlanets"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RadioGroup
+        android:id="@+id/rgPlanets"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/kiloInput"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <RadioButton
+            android:id="@+id/rbMercury"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merkür"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="128dp" />
+
+        <RadioButton
+            android:id="@+id/rbVenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venüs"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="109dp" />
+
+        <RadioButton
+            android:id="@+id/rbEarth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dünya"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="109dp" />
+
+        <RadioButton
+            android:id="@+id/rbMars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mars"
+            tools:layout_conversion_absoluteHeight="183dp"
+            tools:layout_conversion_absoluteWidth="2dp" />
+
+        <RadioButton
+            android:id="@+id/rbJupiter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jupiter"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="109dp" />
+
+        <RadioButton
+            android:id="@+id/rbSaturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Satürn"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="128dp" />
+
+        <RadioButton
+            android:id="@+id/rbUranus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uranüs"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="109dp" />
+
+        <RadioButton
+            android:id="@+id/rbNeptune"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neptün"
+            tools:layout_conversion_absoluteHeight="183dp"
+            tools:layout_conversion_absoluteWidth="2dp" />
+
+        <RadioButton
+            android:id="@+id/rbPluto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plüton"
+            tools:layout_conversion_absoluteHeight="183dp"
+            tools:layout_conversion_absoluteWidth="2dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/yellowtail"
+        android:gravity="center_horizontal|center_vertical"
+        android:textAlignment="center"
+        android:textColor="#4CA1AF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="@+id/kiloInput"
+        app:layout_constraintTop_toBottomOf="@+id/kiloInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
